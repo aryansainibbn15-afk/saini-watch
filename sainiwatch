@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Saini Watch — Timeless Precision</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0e0e0e;color:#fff;line-height:1.6}
+header{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+  url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1600') center/cover no-repeat;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+}
+header h1{font-size:4rem;letter-spacing:4px}
+header p{margin:20px 0;font-weight:300}
+.btn{
+  padding:12px 28px;border:none;background:#c9a24d;color:#000;
+  cursor:pointer;font-weight:600;border-radius:4px;text-decoration:none
+}
+section{padding:80px 10%}
+.about,.collection{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.about img,.card img{width:100%;border-radius:10px}
+.text{flex:1}
+.image{flex:1}
+.collection-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;margin-top:40px
+}
+.card{background:#1a1a1a;padding:20px;border-radius:10px;text-align:center}
+.card h3{margin:15px 0}
+footer{
+  background:#111;padding:30px;text-align:center;font-size:14px;color:#aaa
+}
+nav{
+  position:fixed;top:0;width:100%;padding:20px 10%;
+  display:flex;justify-content:space-between;align-items:center;
+  background:rgba(0,0,0,0.5);backdrop-filter:blur(8px)
+}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+.logo{font-weight:600;letter-spacing:2px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SAINI WATCH</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>SAINI WATCH</h1>
+  <p>Timeless Precision. Modern Elegance.</p>
+  <a href="#collection" class="btn">Explore Collection</a>
+</header>
+
+<section id="about" class="about">
+  <div class="image">
+    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200" alt="watch">
+  </div>
+  <div class="text">
+    <h2>About Saini Watch</h2>
+    <p>
+      Saini Watch represents precision engineering and minimalist design.
+      Built for individuals who value elegance, durability, and timeless fashion.
+      Every piece is crafted to make a statement without saying a word.
+    </p>
+  </div>
+</section>
+
+<section id="collection">
+  <h2 style="text-align:center">Our Collection</h2>
+  <div class="collection-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=800" alt="">
+      <h3>Classic Steel</h3>
+      <p>$199</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=800" alt="">
+      <h3>Midnight Black</h3>
+      <p>$249</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=800" alt="">
+      <h3>Leather Royal</h3>
+      <p>$219</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="text-align:center">
+  <h2>Contact Us</h2>
+  <p>Email: info@sainiwatch.com</p>
+  <p>Instagram: @sainiwatch</p>
+</section>
+
+<footer>
+  © 2026 Saini Watch. All rights reserved.
+</footer>
+
+</body>
+</html>
