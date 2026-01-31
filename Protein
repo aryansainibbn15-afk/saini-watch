@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Saini Protein Gym</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b0b0b;color:#fff}
+nav{
+  position:fixed;top:0;width:100%;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 8%;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);z-index:10
+}
+.logo{font-weight:800;letter-spacing:2px}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-size:14px}
+
+header{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+  url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1600') center/cover no-repeat;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center
+}
+header h1{font-size:4rem;font-weight:800}
+header p{margin:20px 0;font-weight:300}
+.btn{
+  padding:14px 30px;background:#e63946;color:#fff;
+  border:none;border-radius:4px;text-decoration:none;font-weight:600
+}
+
+section{padding:80px 8%}
+.about{display:flex;gap:40px;flex-wrap:wrap;align-items:center}
+.about img{width:100%;border-radius:10px}
+.text,.image{flex:1}
+
+.products{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;margin-top:40px
+}
+.card{background:#151515;padding:20px;border-radius:10px;text-align:center}
+.card img{width:100%;border-radius:10px}
+.card h3{margin:15px 0}
+.price{color:#e63946;font-weight:700}
+
+footer{background:#111;text-align:center;padding:25px;color:#aaa;font-size:14px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SAINI PROTEIN GYM</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Fuel Your Strength</h1>
+  <p>Premium Protein. Real Results.</p>
+  <a href="#products" class="btn">Shop Now</a>
+</header>
+
+<section id="about" class="about">
+  <div class="image">
+    <img src="https://images.unsplash.com/photo-1571019613914-85f342c1d4b1?q=80&w=1200" alt="">
+  </div>
+  <div class="text">
+    <h2>About Saini Protein Gym</h2>
+    <p>
+      Saini Protein Gym delivers high-quality supplements designed for serious athletes.
+      Clean ingredients, powerful formulas, and results you can feel in every workout.
+    </p>
+  </div>
+</section>
+
+<section id="products">
+  <h2 style="text-align:center">Our Products</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800" alt="">
+      <h3>Whey Protein</h3>
+      <p class="price">$49</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594737625785-c11df3b6f8d3?q=80&w=800" alt="">
+      <h3>Mass Gainer</h3>
+      <p class="price">$59</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=800" alt="">
+      <h3>Pre-Workout</h3>
+      <p class="price">$39</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="text-align:center">
+  <h2>Contact</h2>
+  <p>Email: support@sainiproteingym.com</p>
+  <p>Instagram: @sainiproteingym</p>
+</section>
+
+<footer>
+  © 2026 Saini Protein Gym. All rights reserved.
+</footer>
+
+</body>
+</html>
